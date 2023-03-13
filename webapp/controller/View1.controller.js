@@ -13,26 +13,26 @@ sap.ui.define([
 
             },
             onPressOJC:function (){
-                Fragment.load({
-                    name: 'DailyHuddle.dailyhuddleapp.view.OpenJC'
-                }).then(function(oFragment){
-                    oFragment.open();
-                });
+                // Fragment.load({
+                //     name: 'DailyHuddle.dailyhuddleapp.view.OpenJC'
+                // }).then(function(oFragment){
+                //     oFragment.open();
+                // });
 
             },
             onPressMSLA:function(){
-                Fragment.load({
-                    name: 'DailyHuddle.dailyhuddleapp.view.MSLA'
-                }).then(function(oFragment){
-                    oFragment.open();
-                });
+                // Fragment.load({
+                //     name: 'DailyHuddle.dailyhuddleapp.view.MSLA'
+                // }).then(function(oFragment){
+                //     oFragment.open();
+                // });
             },
             onPressFloatUsage:function(){
-                Fragment.load({
-                    name: 'DailyHuddle.dailyhuddleapp.view.Float_Usage'
-                }).then(function(oFragment){
-                    oFragment.open();
-                });
+                // Fragment.load({
+                //     name: 'DailyHuddle.dailyhuddleapp.view.Float_Usage'
+                // }).then(function(oFragment){
+                //     oFragment.open();
+                // });
             }
         });
     });

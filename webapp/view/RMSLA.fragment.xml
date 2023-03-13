@@ -1,0 +1,166 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:ui="sap.ui.table">
+	<!-- <HBox  class="hbclass"> -->
+	<Toolbar class="tbclass">
+		<HBox class="sapUiMediumMarginTopBottom">
+			<Label text="Reach Missed SLA - Last Day : " design="Bold" class="kpitxtcls"/>
+			<Label textAlign="End" width="50px" class="sapUiTinyMarginBegin kpivalcls" textDirection="RTL" id="RMSLA_inpId1" text="" design="Bold"/>
+		</HBox>
+		<HBox class="sapUiMediumMargin">
+			<Label text="Reach Missed SLA - MTD : " design="Bold" class="kpitxtcls"/>
+			<Label textAlign="End" width="50px" class="sapUiTinyMarginBegin kpivalcls" textDirection="RTL" id="RMSLA_inpId2" text="" design="Bold"/>
+		</HBox>
+		<HBox class="sapUiMediumMargin">
+			<Label text="EOS Reach within SLA - MTD : " design="Bold" class="kpitxtcls"/>
+			<Label textAlign="End" width="50px" class="sapUiTinyMarginBegin kpivalcls" textDirection="RTL" id="RMSLA_inpId4" text="" design="Bold"/>
+		</HBox>
+		<HBox class="sapUiMediumMargin">
+			<Label text="% EOS Reach within SLA : " design="Bold" class="kpitxtcls"/>
+			<Label textAlign="End" width="50px" class="sapUiTinyMarginBegin kpivalcls" textDirection="RTL" id="RMSLA_inpId3" text="" design="Bold"/>
+		</HBox>
+	</Toolbar>
+	<!-- </HBox> -->
+	<ui:Table id="uiTab4" rows="" selectionMode="MultiToggle"
+		rowSelectionChange="HdrSelectionChng" visibleRowCount="3" paste="onPaste" fixedColumnCount="4" ariaLabelledBy="title">
+	
+		<ui:columns>
+			<ui:Column width="2rem">
+				<Label text=""/>
+				<ui:template>
+					<core:Icon src="sap-icon://flag" class="size1" color=""></core:Icon>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="11rem">
+				<Label text="EOS Ticket No" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="12rem">
+				<Label text="Customer Name" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="17rem">
+				<Label text="Customer No" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="12rem">
+				<Label text="Cust Type (KAM/Retail)" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="15rem">
+				<Label text="Ticket Assigned to (VAN/Portal)" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="9rem">
+				<Label text="Vehicle Type" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="11rem">
+				<Label text="Chassis" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="7rem">
+				<Label text="Veh Reg No" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="14rem">
+				<Label text="Ticket Created Date &amp; Time" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="12rem">
+				<Label text="Reassigned Date &amp; Time" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="12rem" hAlign="Center">
+				<Label text="Trip Start Date &amp; Time" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="12rem" hAlign="Center">
+				<Label text="Van Reach Date &amp; Time" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="20rem" hAlign="Center">
+				<Label text="Breakdown Location" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="11rem" hAlign="Center">
+				<Label text="Estiamted Distance" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="13rem" hAlign="Center">
+				<Label text="Total Reach Time (Minutes)" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="14rem" hAlign="Center">
+				<Label text="Pre- Closure Date &amp; Time" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="14rem" hAlign="Center">
+				<Label text="Closure Date &amp; Time" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="14rem" hAlign="Center">
+				<Label text="Total Resolution Time" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="11rem" hAlign="Center">
+				<Label text="QOC Action" design="Bold"/>
+				<ui:template>
+					<Select enabled="" selectedKey="" width="100%">
+						<core:Item key="" text=""/>
+						<core:Item key="Y" text="YES"/>
+						<core:Item key="N" text="NO"/>
+					</Select>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="11rem" hAlign="Center">
+				<Label text="Huddle Delay Reason" design="Bold"/>
+				<ui:template>
+					<Select enabled="" selectedKey="" change="onSelectReason" width="100%" items="">
+						<core:Item key="" text=""/>
+					</Select>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="20rem" hAlign="Center">
+				<Label text="Remarks" design="Bold" required="true"/>
+				<ui:template>
+					<TextArea enabled="" width="100%" value="" growingMaxLines="4" maxLength="250" rows="3" placeholder="Mandatory field"/>
+				</ui:template>
+			</ui:Column>
+		</ui:columns>
+	</ui:Table>
+</core:FragmentDefinition>

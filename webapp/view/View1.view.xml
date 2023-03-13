@@ -38,7 +38,8 @@
 						<core:Fragment fragmentName="DailyHuddle.dailyhuddleapp.view.Float_Usage" class="sapUiSizeCompact" type="XML"/>
         </IconTabFilter>
         <IconTabFilter text="Revisit" icon="sap-icon://shipping-status" key="RVKey" id="RVKey" tooltip="Revisit" >
-        
+        <!-- Fragment 5 -->
+        <core:Fragment fragmentName="DailyHuddle.dailyhuddleapp.view.RV" class="sapUiSizeCompact" type="XML"/>
         </IconTabFilter>
         <IconTabFilter text="EOS" icon="sap-icon://bus-public-transport" key="EOSKey" id="EOSKey" tooltip="EOS" class="sapUiTinyMargin" >
         <HBox>
@@ -48,6 +49,12 @@
 							<ToggleButton text="Resolution Missed SLA" class="sapUiTinyMargin sapUiNoMarginTop sapUiTinyMarginBottom" id="rsmslatb" pressed="false"
 								press="onPressRSMSLA"/>
 						</HBox>
+                        <!-- Fragment 6 -->
+                        <core:Fragment fragmentName="DailyHuddle.dailyhuddleapp.view.OpenEOS" class="sapUiSizeCompact" type="XML"/>
+                        <!-- Fragment 7 -->
+                        <core:Fragment fragmentName="DailyHuddle.dailyhuddleapp.view.RMSLA" class="sapUiSizeCompact" type="XML"/>
+                        <!-- Fragment 8 -->
+                        <core:Fragment fragmentName="DailyHuddle.dailyhuddleapp.view.RSMSLA" class="sapUiSizeCompact" type="XML"/>
         </IconTabFilter>
         <IconTabFilter text="CRM Complaints" icon="sap-icon://outgoing-call" key="CRMCKey" id="CRMCKey" tooltip="CRM Complaints"
 						class="sapUiTinyMargin" >
@@ -57,17 +64,26 @@
 							<ToggleButton text="Missed SLA Complaints" class="sapUiTinyMargin sapUiNoMarginTop sapUiTinyMarginBottom" id="mslactb" pressed="false"
 								press="onPressMSLAC"/>
 						</HBox>
+                        <!-- Fragment 9 -->
+                        <core:Fragment fragmentName="DailyHuddle.dailyhuddleapp.view.OC" class="sapUiSizeCompact" type="XML"/>
+                        <!-- Fragment 10 -->
+                        <core:Fragment fragmentName="DailyHuddle.dailyhuddleapp.view.MSLAC" class="sapUiSizeCompact" type="XML"/>
+
         </IconTabFilter>
-        <IconTabFilter text="Case Management" icon="sap-icon://pending" key="CASEMKey" id="CASEMKey" tooltip="Case Management"
+        <IconTabFilter text="Case Management" icon="sap-icon://pending" key="CASEMKey" id="idCASEM" tooltip="Case Management"
 						class="sapUiTinyMargin" >
-        
+         <!-- Fragment 11 -->
+         <core:Fragment fragmentName="DailyHuddle.dailyhuddleapp.view.CASEM" class="sapUiSizeCompact" type="XML"/>
+         
         </IconTabFilter>
         <IconTabFilter class="sapUiTinyMargin" text="PI" icon="sap-icon://settings" key="PIKey" id="PIKey" tooltip="PI" >
-        
+        <!-- Fragment 12 -->
+        <core:Fragment fragmentName="DailyHuddle.dailyhuddleapp.view.PI" class="sapUiSizeCompact" type="XML"/>
         </IconTabFilter>
         <IconTabFilter class="sapUiTinyMargin" text="Pending GRN" icon="sap-icon://meeting-room" key="epod_grnKey" id="epod_grnKey"
 						tooltip="Pending GRN" >
-        
+        <!-- Fragment 13 -->
+        <core:Fragment fragmentName="DailyHuddle.dailyhuddleapp.view.EPOD_GRN" class="sapUiSizeCompact" type="XML"/>
         </IconTabFilter>
         </items>
         </IconTabBar>

@@ -1,0 +1,132 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form"
+	xmlns:u="sap.ui.unified" xmlns:ui="sap.ui.table">
+	<!-- HBox  class="hbclass1"> -->
+	<Toolbar class="tbclass">
+		<HBox class="sapUiMediumMarginTopBottom">
+			<Label text="Revisit JC (MTD):" design="Bold" class="kpitxtcls"/>
+			<Label textAlign="End" width="50px" class="sapUiTinyMarginBegin kpivalcls" textDirection="RTL" id="RV_inpId1" text="" design="Bold"/>
+		</HBox>
+		<HBox class="sapUiMediumMargin">
+			<Label text="Total Applicable JC (MTD):" design="Bold" class="kpitxtcls"/>
+			<Label textAlign="End" width="50px" class="sapUiTinyMarginBegin kpivalcls" textDirection="RTL" id="TAPPJC_inpId2" text="" design="Bold"/>
+		</HBox>
+		<HBox class="sapUiMediumMarginTopBottom">
+			<Label text="% Revisit (MTD):" design="Bold" class="kpitxtcls"/>
+			<Label textAlign="End" width="50px" class="sapUiTinyMarginBegin kpivalcls" textDirection="RTL" id="PerPV_inpId3" text="" design="Bold"/>
+		</HBox>
+	</Toolbar>
+	<!-- </HBox> -->
+	<ui:Table id="uiTab12" rows="" selectionMode="MultiToggle" rowSelectionChange="HdrSelectionChng" visibleRowCount="3"
+		paste="onPaste" fixedColumnCount="3" ariaLabelledBy="title">
+		<ui:columns>
+			<ui:Column width="9rem">
+				<Label text="Current JC" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="11rem">
+				<Label text="Current Dealer" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="11rem">
+				<Label text="Current JC Date" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="11rem">
+				<Label text="Previous JC" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="14rem">
+				<Label text="Previous JC Date" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="11rem">
+				<Label text="Previous Dealer" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="11rem">
+				<Label text="Vehicle Chasis No" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="17rem">
+				<Label text="Customer Name" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="11rem">
+				<Label text="Vehicle Reg. No" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="11rem">
+				<Label text="Model" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="11rem">
+				<Label text="warranty Flag" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="11rem">
+				<Label text="Tipper Flag" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="18rem">
+				<Label text="KM travelled from last visit" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="11rem">
+				<Label text="Days from Last visit" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="11rem" hAlign="Center">
+				<Label text="Huddle Delay Reason" design="Bold"/>
+				<ui:template>
+					<Select enabled="" width="100%" selectedKey="" items="{RV>/}">
+						<core:Item key="" text=""/>
+					</Select>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="11rem" hAlign="Center">
+				<Label text="QOC Action" design="Bold"/>
+				<ui:template>
+					<Select enabled="" selectedKey="" width="100%">
+						<core:Item key="" text=""/>
+						<core:Item key="Y" text="YES"/>
+						<core:Item key="N" text="NO"/>
+					</Select>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="20rem" hAlign="Center">
+				<Label text="Remarks" design="Bold" required="true"/>
+				<ui:template>
+					<TextArea enabled="" width="100%" value="" growingMaxLines="4" maxLength="250" rows="3" placeholder="Mandatory field"/>
+				</ui:template>
+			</ui:Column>
+		</ui:columns>
+	</ui:Table>
+</core:FragmentDefinition>
