@@ -1,0 +1,27 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout">
+    <Bar>
+        <contentMiddle>
+            <Label text="Dealer Code :" labelFor="comboBox" />
+            <ComboBox id="comboBox" required="true" showSelectAll="true" width="200px">
+                <items>
+                    <core:Item key="" text="" />
+                </items>
+            </ComboBox>
+            <Label text="Select Month :" labelFor="MultiComboBox1" />
+            <MultiComboBox id="MultiComboBox1" required="true" showSelectAll="true" width="200px">
+                <items>
+                    <core:Item key="" text="" />
+                </items>
+            </MultiComboBox>
+            <Label text="Select Year : " labelFor="MultiComboBox2" />
+            <MultiComboBox id="MultiComboBox2" required="true" showSelectAll="true" width="200px">
+                <items>
+                    <core:Item key="" text="" />
+                </items>
+            </MultiComboBox>
+            <Button id="idProceedBtn" text="Proceed" type="Accept" class="Btncss" press="onProceedPress" visible="true" />
+            <Button id="idEditBtn" text="Edit" type="Accept" class="Btncss1" press="onEditPress" visible="false" />
+            <Button id="idHuddleSubmitBtn" text="Huddle Submit" type="Accept" class="Btncss2" press="onHuddleSubmitPress" visible="false" />
+        </contentMiddle>
+    </Bar>
+</core:FragmentDefinition>

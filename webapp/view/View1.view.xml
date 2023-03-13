@@ -1,0 +1,76 @@
+<mvc:View controllerName="DailyHuddle.dailyhuddleapp.controller.View1" xmlns="sap.m" 
+                                                                       xmlns:mvc="sap.ui.core.mvc"
+                                                                       xmlns:core="sap.ui.core"
+                                                                       xmlns:f="sap.ui.layout.form"
+                                                                       xmlns:u="sap.ui.unified" 
+                                                                       xmlns:ui="sap.ui.table">
+    <Page id="page" title="" class="sapUiSizeCompact" enableScrolling="false" height="95%">
+        <customHeader>
+            <Bar>
+                <contentMiddle>
+                    <Title id="headerTitle" class="titlecss" text="DAILY HUDDLE MEETING" />
+                </contentMiddle>
+                <contentLeft>
+                    <Image src="utils/logo.png" class="logoCss" />
+                </contentLeft>
+                <contentRight class="rgtclass" />
+            </Bar>
+        </customHeader>
+
+        <content>
+        <!-- Fragment 1 -->
+        <core:Fragment fragmentName="DailyHuddle.dailyhuddleapp.view.VType" class="sapUiSmallMarginBottom" type="XML"/>
+        <IconTabBar id="idITB" visible="true" expanded="true" class="sapUiResponsiveContentPadding" select="onIcontabSelect">
+        <items>
+        <IconTabFilter text="Open JC" icon="sap-icon://inventory" id="OJKey" key="OJKey" tooltip="Open JC" class="sapUiTinyMargin" >
+        <HBox>
+							<ToggleButton text="Open JC" id="ojctb" class="sapUiTinyMargin sapUiNoMarginTop sapUiTinyMarginBottom" pressed="true" press="onPressOJC"/>
+							<ToggleButton text="Missed SLA" class="sapUiTinyMargin sapUiNoMarginTop sapUiTinyMarginBottom" id="mslatb" pressed="false"
+								press="onPressMSLA"/>
+							<ToggleButton text="Float Usage" class="sapUiTinyMargin sapUiNoMarginTop sapUiTinyMarginBottom" id="idFloatUsage" pressed="false"
+								press="onPressFloatUsage"/>
+						</HBox>
+                        <!-- Fragment 2 -->
+						<!-- <core:Fragment fragmentName="DailyHuddle.dailyhuddleapp.view.OpenJC" class="sapUiSizeCompact" type="XML"/> -->
+						<!-- Fragment 3 -->
+						<!-- <core:Fragment fragmentName="DailyHuddle.dailyhuddleapp.view.MSLA" class="sapUiSizeCompact" type="XML"/> -->
+						<!-- Fragment 4 -->
+						<!-- <core:Fragment fragmentName="DailyHuddle.dailyhuddleapp.view.Float_Usage" class="sapUiSizeCompact" type="XML"/> -->
+        </IconTabFilter>
+        <IconTabFilter text="Revisit" icon="sap-icon://shipping-status" key="RVKey" id="RVKey" tooltip="Revisit" >
+        
+        </IconTabFilter>
+        <IconTabFilter text="EOS" icon="sap-icon://bus-public-transport" key="EOSKey" id="EOSKey" tooltip="EOS" class="sapUiTinyMargin" >
+        <HBox>
+							<ToggleButton text="Open EOS" id="oeostb" class="sapUiTinyMargin sapUiNoMarginTop sapUiTinyMarginBottom" pressed="true" press="onPressOEOS"/>
+							<ToggleButton text="Reach Missed SLA" class="sapUiTinyMargin sapUiNoMarginTop sapUiTinyMarginBottom" id="remslatb" pressed="false"
+								press="onPressRCMSLA"/>
+							<ToggleButton text="Resolution Missed SLA" class="sapUiTinyMargin sapUiNoMarginTop sapUiTinyMarginBottom" id="rsmslatb" pressed="false"
+								press="onPressRSMSLA"/>
+						</HBox>
+        </IconTabFilter>
+        <IconTabFilter text="CRM Complaints" icon="sap-icon://outgoing-call" key="CRMCKey" id="CRMCKey" tooltip="CRM Complaints"
+						class="sapUiTinyMargin" >
+        <HBox>
+							<ToggleButton text="Open Complaints" id="octb" class="sapUiTinyMargin sapUiNoMarginTop sapUiTinyMarginBottom" pressed="true"
+								press="onPressOC"/>
+							<ToggleButton text="Missed SLA Complaints" class="sapUiTinyMargin sapUiNoMarginTop sapUiTinyMarginBottom" id="mslactb" pressed="false"
+								press="onPressMSLAC"/>
+						</HBox>
+        </IconTabFilter>
+        <IconTabFilter text="Case Management" icon="sap-icon://pending" key="CASEMKey" id="CASEMKey" tooltip="Case Management"
+						class="sapUiTinyMargin" >
+        
+        </IconTabFilter>
+        <IconTabFilter class="sapUiTinyMargin" text="PI" icon="sap-icon://settings" key="PIKey" id="PIKey" tooltip="PI" >
+        
+        </IconTabFilter>
+        <IconTabFilter class="sapUiTinyMargin" text="Pending GRN" icon="sap-icon://meeting-room" key="epod_grnKey" id="epod_grnKey"
+						tooltip="Pending GRN" >
+        
+        </IconTabFilter>
+        </items>
+        </IconTabBar>
+        </content>
+    </Page>
+</mvc:View>

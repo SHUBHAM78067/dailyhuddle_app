@@ -1,0 +1,26 @@
+/* Enter your custom styles here */
+.sapUiSizeCompact .sapUiFormContainerTitle>.sapUiFormTitle {
+    height: 0rem  !important;
+    line-height: 2rem;
+}
+.hdrclass {
+    margin-bottom: 3% !important;
+    color: #58598C;
+    font-weight: 600;
+    font-size: larger;
+}
+.logoCss {
+    height: 60px !important;
+    vertical-align: middle !important;
+    width: 170px !important;
+    margin-left: 0.125em !important;
+    margin-top: -1px !important;
+}
+.rgtclass{
+	margin-right : 1% !important;
+}
+.titlecss {
+        position: absolute;
+        width: 916px;
+        left: 100px !important;
+    }

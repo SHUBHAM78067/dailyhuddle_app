@@ -1,0 +1,167 @@
+<core:FragmentDefinition xmlns="sap.m" 
+                         xmlns:core="sap.ui.core" 
+                         xmlns:l="sap.ui.layout" 
+                         xmlns:f="sap.ui.layout.form" 
+                         xmlns:u="sap.ui.unified" 
+                         xmlns:ui="sap.ui.table">
+    <Toolbar class="tbclass">
+        <HBox class="sapUiMediumMarginTopBottom">
+            <Label text="Repair JC Count : " design="Bold" class="kpitxtcls" />
+            <Label width="50px" textAlign="End" class="sapUiTinyMarginBegin kpivalcls" textDirection="RTL" text="" id="repaire_inpId" design="Bold" />
+        </HBox>
+        <HBox class="sapUiMediumMargin">
+            <Label text="Accident JC Count: " design="Bold" class="kpitxtcls" />
+            <Label width="50px" textAlign="End" textDirection="RTL" class="sapUiTinyMarginBegin kpivalcls" text="" id="Accd_inpId" design="Bold" />
+        </HBox>
+        <HBox class="sapUiMediumMarginTopBottom">
+            <Label text="BSVI JC Count : " design="Bold" class="kpitxtcls" />
+            <Label width="50px" textAlign="End" textDirection="RTL" class="sapUiTinyMarginBegin kpivalcls" text="" id="BSVI_inpId2" design="Bold" />
+        </HBox>
+    </Toolbar>
+    <ui:Table id="uiTab1" selectionMode="MultiToggle" rowSelectionChange="HdrSelectionChng" visibleRowCount="3" paste="onPaste" fixedColumnCount="3" setEnableGrouping="true" ariaLabelledBy="title">
+        <ui:columns>
+            <ui:Column width="11rem">
+                <Label text="JC No" design="Bold" />
+                <ui:template>
+                    <Text text="" wrapping="false" />
+                </ui:template>
+            </ui:Column>
+            <ui:Column width="11rem">
+                <Label text="JC Type" design="Bold" />
+                <ui:template>
+                    <Text text="" wrapping="false" />
+                </ui:template>
+            </ui:Column>
+            <ui:Column width="9rem">
+                <Label text="JC Open Date" design="Bold" />
+                <ui:template>
+                    <Text text="" wrapping="false" />
+                </ui:template>
+            </ui:Column>
+            <ui:Column width="17rem">
+                <Label text="Customer Name" design="Bold" />
+                <ui:template>
+                    <Text text="" wrapping="false" />
+                </ui:template>
+            </ui:Column>
+            <ui:Column width="9rem">
+                <Label text="Cust Mobile No" design="Bold" />
+                <ui:template>
+                    <Text text="" wrapping="false" />
+                </ui:template>
+            </ui:Column>
+            <ui:Column width="12rem">
+                <Label text="Cust Type (KAM/Retail)" design="Bold" />
+                <ui:template>
+                    <Text text="" wrapping="false" />
+                </ui:template>
+            </ui:Column>
+            <ui:Column width="12rem">
+                <Label text="Vehicle Reg. Number" design="Bold" />
+                <ui:template>
+                    <Text text="" wrapping="false" />
+                </ui:template>
+            </ui:Column>
+            <ui:Column width="9rem">
+                <Label text="Vehicle Type" design="Bold" />
+                <ui:template>
+                    <Text text="" wrapping="false" />
+                </ui:template>
+            </ui:Column>
+            <ui:Column width="11rem">
+                <Label text="Chassis" design="Bold" />
+                <ui:template>
+                    <Text text="" wrapping="false" />
+                </ui:template>
+            </ui:Column>
+            <ui:Column width="7rem">
+                <Label text="Model" design="Bold" />
+                <ui:template>
+                    <Text text="" wrapping="false" />
+                </ui:template>
+            </ui:Column>
+            <ui:Column width="12rem">
+                <Label text="Emission Norms" design="Bold" />
+                <ui:template>
+                    <Text text="" wrapping="false" />
+                </ui:template>
+            </ui:Column>
+            <ui:Column width="17rem">
+                <Label text="Delay Reason" design="Bold" />
+                <ui:template>
+                    <Text text="" wrapping="false" />
+                </ui:template>
+            </ui:Column>
+            <ui:Column width="7rem" hAlign="Center">
+                <Label text="VOR Order No" design="Bold" />
+                <ui:template>
+                    <Text text="" wrapping="false" />
+                </ui:template>
+            </ui:Column>
+            <ui:Column width="11rem" hAlign="Center">
+                <Label text="Uptime Case ID" design="Bold" />
+                <ui:template>
+                    <Text text="" wrapping="false" />
+                </ui:template>
+            </ui:Column>
+            <ui:Column width="11rem" hAlign="Center">
+                <Label text="Uptime Status" design="Bold" />
+                <ui:template>
+                    <Text text="" wrapping="false" />
+                </ui:template>
+            </ui:Column>
+            <ui:Column width="11rem" hAlign="Center">
+                <Label text="JC Open Days" design="Bold" />
+                <ui:template>
+                    <Text text="" wrapping="false" />
+                </ui:template>
+            </ui:Column>
+            <ui:Column width="11rem" hAlign="Center">
+                <Label text="T2 Date" design="Bold" />
+                <ui:template>
+                    <Text text="" wrapping="false" />
+                </ui:template>
+            </ui:Column>
+            <ui:Column width="11rem" hAlign="Center">
+                <Label text="T4 Date" design="Bold" />
+                <ui:template>
+                    <Text text="" wrapping="false" />
+                </ui:template>
+            </ui:Column>
+            <ui:Column width="11rem" hAlign="Center">
+                <Label text="T6 Done" design="Bold" />
+                <ui:template>
+                    <Text text="" wrapping="false" />
+                    <Select enabled="false" width="100%" selectedKey="">
+                        <core:Item key="Y" text="YES" />
+                        <core:Item key="N" text="No" />
+                    </Select>
+                </ui:template>
+            </ui:Column>
+            <ui:Column width="11rem" hAlign="Center">
+                <Label text="Float Used" design="Bold" />
+                <!--required="true"-->
+                <ui:template>
+                    <Select id="idFloatUsed" selectedKey="" enabled="" change="onFloatUsedChange">
+                        <core:Item key="Y" text="YES" />
+                        <core:Item key="N" text="No" />
+                    </Select>
+                </ui:template>
+            </ui:Column>
+            <ui:Column width="11rem" hAlign="Center">
+                <Label text="Huddle Delay Reason" design="Bold" />
+                <ui:template>
+                    <Select enabled="" change="onSelectReason" width="100%" selectedKey="" items="">
+                        <core:Item key="" text="" />
+                    </Select>
+                </ui:template>
+            </ui:Column>
+            <ui:Column width="20rem" hAlign="Center">
+                <Label text="Remarks" design="Bold" required="true" />
+                <ui:template>
+                    <TextArea enabled="" width="100%" value="" growingMaxLines="4" maxLength="1000" rows="3" change="onRemarksChange" placeholder="Mandatory field" />
+                </ui:template>
+            </ui:Column>
+        </ui:columns>
+    </ui:Table>
+</core:FragmentDefinition>
