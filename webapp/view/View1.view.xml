@@ -4,7 +4,7 @@
                                                                        xmlns:f="sap.ui.layout.form"
                                                                        xmlns:u="sap.ui.unified" 
                                                                        xmlns:ui="sap.ui.table">
-    <Page id="page" title="" class="sapUiSizeCompact" enableScrolling="false" height="95%">
+    <Page id="page" title="" class="sapUiSizeCompact" enableScrolling="true" height="95%">
         <customHeader>
             <Bar>
                 <contentMiddle>
@@ -31,11 +31,11 @@
 								press="onPressFloatUsage"/>
 						</HBox>
                         <!-- Fragment 2 -->
-						<!-- <core:Fragment fragmentName="DailyHuddle.dailyhuddleapp.view.OpenJC" class="sapUiSizeCompact" type="XML"/> -->
+						<core:Fragment fragmentName="DailyHuddle.dailyhuddleapp.view.OpenJC" class="sapUiSizeCompact" type="XML"/>
 						<!-- Fragment 3 -->
-						<!-- <core:Fragment fragmentName="DailyHuddle.dailyhuddleapp.view.MSLA" class="sapUiSizeCompact" type="XML"/> -->
+						<core:Fragment fragmentName="DailyHuddle.dailyhuddleapp.view.MSLA" class="sapUiSizeCompact" type="XML" />
 						<!-- Fragment 4 -->
-						<!-- <core:Fragment fragmentName="DailyHuddle.dailyhuddleapp.view.Float_Usage" class="sapUiSizeCompact" type="XML"/> -->
+						<core:Fragment fragmentName="DailyHuddle.dailyhuddleapp.view.Float_Usage" class="sapUiSizeCompact" type="XML"/>
         </IconTabFilter>
         <IconTabFilter text="Revisit" icon="sap-icon://shipping-status" key="RVKey" id="RVKey" tooltip="Revisit" >
         

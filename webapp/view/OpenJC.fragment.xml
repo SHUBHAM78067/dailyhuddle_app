@@ -4,16 +4,16 @@
                          xmlns:f="sap.ui.layout.form" 
                          xmlns:u="sap.ui.unified" 
                          xmlns:ui="sap.ui.table">
-    <Toolbar class="tbclass">
-        <HBox class="sapUiMediumMarginTopBottom">
-            <Label text="Repair JC Count : " design="Bold" class="kpitxtcls" />
+    <Toolbar id="OpenjcToolBar" class="tbclass">
+        <HBox id="ojcHBox1" class="sapUiMediumMarginTopBottom">
+            <Label id="LabelRepairJCCount" text="Repair JC Count : " design="Bold" class="kpitxtcls" />
             <Label width="50px" textAlign="End" class="sapUiTinyMarginBegin kpivalcls" textDirection="RTL" text="" id="repaire_inpId" design="Bold" />
         </HBox>
-        <HBox class="sapUiMediumMargin">
-            <Label text="Accident JC Count: " design="Bold" class="kpitxtcls" />
+        <HBox id="ojcHBox2" class="sapUiMediumMargin">
+            <Label  text="Accident JC Count: " design="Bold" class="kpitxtcls" />
             <Label width="50px" textAlign="End" textDirection="RTL" class="sapUiTinyMarginBegin kpivalcls" text="" id="Accd_inpId" design="Bold" />
         </HBox>
-        <HBox class="sapUiMediumMarginTopBottom">
+        <HBox id="ojcHBox3" class="sapUiMediumMarginTopBottom">
             <Label text="BSVI JC Count : " design="Bold" class="kpitxtcls" />
             <Label width="50px" textAlign="End" textDirection="RTL" class="sapUiTinyMarginBegin kpivalcls" text="" id="BSVI_inpId2" design="Bold" />
         </HBox>

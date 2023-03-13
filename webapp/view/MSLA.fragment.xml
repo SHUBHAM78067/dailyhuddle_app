@@ -1,0 +1,192 @@
+<core:FragmentDefinition xmlns="sap.m"
+                         xmlns:core="sap.ui.core" 
+                         xmlns:l="sap.ui.layout" 
+                         xmlns:f="sap.ui.layout.form" 
+                         xmlns:ui="sap.ui.table">
+
+	
+	
+	<Toolbar id="idMSLAToolbar" class="tbclass">
+		<HBox class="sapUiMediumMarginTopBottom">
+			<Label text="Missed SLA Count (Last Day) : " design="Bold" class="kpitxtcls"/>
+			<Label textAlign="End" width="50px" class="sapUiTinyMarginBegin kpivalcls" textDirection="RTL" id="MISLAC_inpId1" text="" design="Bold"/>
+		</HBox>
+		<HBox class="sapUiMediumMargin">
+			<Label text="Missed SLA Count (MTD Wise) : " design="Bold" class="kpitxtcls"/>
+			<Label textAlign="End" width="50px" class="sapUiTinyMarginBegin kpivalcls" textDirection="RTL" id="MISLAC_inpId2" text="" design="Bold"/>
+		</HBox>
+		<HBox class="sapUiMediumMargin">
+			<Label text="Total Applicable JC : " design="Bold" class="kpitxtcls"/>
+			<Label textAlign="End" width="50px" class="sapUiTinyMarginBegin kpivalcls" textDirection="RTL" id="MISLAC_inpId3" text="" design="Bold"/>
+		</HBox>
+		<HBox class="sapUiMediumMarginTopBottom">
+			<Label text="WS Responsiveness Score (MTD) : " design="Bold" class="kpitxtcls"/>
+			<Label textAlign="End" width="50px" class="sapUiTinyMarginBegin kpivalcls" textDirection="RTL" id="WSRS_inpId2" text="" design="Bold"/>
+		</HBox>
+	</Toolbar>
+	
+	<ui:Table id="uiTab2" selectionMode="MultiToggle" rowSelectionChange="HdrSelectionChng" visibleRowCount="3"
+		paste="onPaste" fixedColumnCount="4" ariaLabelledBy="title">
+		<ui:columns>
+			<ui:Column width="2rem">
+				<Label text=""/>
+				<ui:template>
+					<core:Icon src="sap-icon://flag" class="size1" color=""></core:Icon>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="11rem">
+				<Label text="JC No" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="11rem">
+				<Label text="JC Type" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="9rem">
+				<Label text="JC Open Date" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="17rem">
+				<Label text="Customer Name" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="9rem">
+				<Label text="Cust Mobile No" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="12rem">
+				<Label text="Cust Type (KAM/Retail)" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="12rem">
+				<Label text="Vehicle Reg. Number" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="9rem">
+				<Label text="Vehicle Type" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="12rem">
+				<Label text="Chassis" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="7rem">
+				<Label text="Model" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="12rem">
+				<Label text="Emission Norms" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="17rem">
+				<Label text="Delay Reason" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="12rem">
+				<Label text="T5-T0" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="12rem">
+				<Label text="FRT (Hrs)" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="12rem">
+				<Label text="Solman No" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="7rem" hAlign="Center">
+				<Label text="VOR order No" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="11rem" hAlign="Center">
+				<Label text="Uptime Case ID" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="11rem" hAlign="Center">
+				<Label text="Uptime Status" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+		
+			<ui:Column width="11rem" hAlign="Center">
+				<Label text="T2 Date" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="11rem" hAlign="Center">
+				<Label text="T4 Date" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="11rem" hAlign="Center">
+				<Label text="T5 Date" design="Bold"/>
+				<ui:template>
+					<Text text="" wrapping="false"/>
+				</ui:template>
+			</ui:Column>
+		
+			<ui:Column width="11rem" hAlign="Center">
+				<Label text="Huddle Delay Reason" design="Bold"/>
+				<ui:template>
+					<Select enabled="" width="100%" selectedKey="" change="onSelectReason" items="">
+						<core:Item key="" text=""/>
+					</Select>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="11rem" hAlign="Center">
+				<Label text="QOC Action" design="Bold"/>
+				<ui:template>
+					<Select enabled="" selectedKey="" width="100%">
+						<core:Item key="" text=""/>
+						<core:Item key="Y" text="YES"/>
+						<core:Item key="N" text="NO"/>
+					</Select>
+				</ui:template>
+			</ui:Column>
+			<ui:Column width="20rem" hAlign="Center">
+				<Label text="Remarks" design="Bold" required="true"/>
+				<ui:template>
+					<TextArea enabled="" value="" width="100%" growingMaxLines="4" maxLength="250" rows="3" change="onRemarksChange" placeholder="Mandatory field"/>
+				</ui:template>
+			</ui:Column>
+		</ui:columns>
+	</ui:Table>
+	
+</core:FragmentDefinition>
