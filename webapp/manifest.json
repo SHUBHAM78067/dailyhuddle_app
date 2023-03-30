@@ -73,8 +73,19 @@
         "dataSource": "mainService",
         "preload": true,
         "settings": {}
-      }
-    },
+      },
+      "months": {
+      "type": "sap.ui.model.json.JSONModel",
+      "settings": {},
+      "preload": true,
+      "uri": "model/months.json"
+     },
+     "years": {
+      "type": "sap.ui.model.json.JSONModel",
+      "settings": {},
+      "preload": true,
+      "uri": "model/years.json"
+    }},
     "resources": {
       "css": [
         {

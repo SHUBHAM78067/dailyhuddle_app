@@ -112,6 +112,9 @@ sap.ui.define(
         this.getView().byId("uiTab6").setVisible(false);
         this.getView().byId("toolbarmslac").setVisible(true);
         this.getView().byId("uiTab7").setVisible(true);
+      },
+      onProceedPress:function(){
+        this.getView().byId("idITB").setVisible(true);
       }
     });
   }

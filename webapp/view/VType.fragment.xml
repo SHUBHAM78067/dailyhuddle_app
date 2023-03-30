@@ -1,5 +1,5 @@
 <core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout">
-    <Bar>
+    <Bar class="editableForm">
         <contentMiddle>
             <Label text="Dealer Code :" labelFor="comboBox" />
             <ComboBox id="comboBox" required="true" showSelectAll="true" width="200px">
@@ -8,32 +8,15 @@
                 </items>
             </ComboBox>
             <Label text="Select Month :" labelFor="MultiComboBox1" />
-            <MultiComboBox id="MultiComboBox1" required="true" showSelectAll="true" width="200px">
+            <MultiComboBox id="MultiComboBox1" required="true" items="{months>/months}" showSelectAll="true" width="200px">
                 <items>
-                <core:Item key="January" text="January"/>
-				<core:Item key="February" text="February"/>
-				<core:Item key="March" text="March"/>
-				<core:Item key="April" text="April"/>
-				<core:Item key="May" text="May"/>
-                <core:Item key="June" text="June"/>
-				<core:Item key="July" text="July"/>
-				<core:Item key="August" text="August"/>
-				<core:Item key="September" text="September"/>
-				<core:Item key="October" text="October"/>
-                <core:Item key="November" text="November "/>
-				<core:Item key="December" text="December"/>
+                <core:Item key="{months>name}" text="{months>name}"/>
                 </items>
             </MultiComboBox>
             <Label text="Select Year : " labelFor="MultiComboBox2" />
-            <MultiComboBox id="MultiComboBox2" required="true" showSelectAll="true" width="200px">
+            <MultiComboBox id="MultiComboBox2" required="true" items="{years>/years}"  showSelectAll="true" width="200px">
                 <items>
-                    <core:Item key="2020" text="2020"/>
-				<core:Item key="2021" text="2021"/>
-				<core:Item key="2022" text="2022"/>
-				<core:Item key="2023" text="2023"/>
-				<core:Item key="2024" text="2024"/>
-				<core:Item key="2025" text="2025"/>
-				
+               <core:Item key="{years>year}" text="{years>year}"/>
                 </items>
             </MultiComboBox>
             <Button id="idProceedBtn" text="Proceed" type="Accept" class="Btncss" press="onProceedPress" visible="true" />

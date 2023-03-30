@@ -20,7 +20,7 @@
         <content>
         <!-- Fragment 1 -->
         <core:Fragment fragmentName="DailyHuddle.dailyhuddleapp.view.VType" class="sapUiSmallMarginBottom" type="XML"/>
-        <IconTabBar id="idITB" visible="true" expanded="true" class="sapUiResponsiveContentPadding" select="onIcontabSelect">
+        <IconTabBar id="idITB" visible="false" expanded="true" class="sapUiResponsiveContentPadding" select="onIcontabSelect">
         <items>
         <IconTabFilter text="Open JC" icon="sap-icon://inventory" id="OJKey" key="OJKey" tooltip="Open JC" class="sapUiTinyMargin" >
         <HBox>
