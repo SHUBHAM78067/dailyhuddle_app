@@ -1,6 +1,6 @@
 <core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:ui="sap.ui.table">
 	<!-- <HBox  class="hbclass"> -->
-	<Toolbar class="tbclass">
+	<Toolbar id="toolbarrsmsla" class="tbclass" visible="false">
 		<HBox class="sapUiMediumMarginTopBottom">
 			<Label text="Res. SLA missed -Last Day : " design="Bold" class="kpitxtcls"/>
 			<Label textAlign="End" width="50px" class="sapUiTinyMarginBegin kpivalcls" textDirection="RTL" id="RMD_inpId3" text="" design="Bold"/>
@@ -20,7 +20,7 @@
 		</HBox>
 	</Toolbar>
 	<!-- </HBox> -->
-	<ui:Table id="uiTab5" rows="{path : '/results' , sorter:{path:'HuddleDate',descending: true}}" selectionMode="MultiToggle"
+	<ui:Table id="uiTab5" visible="false" rows="{path : '/results' , sorter:{path:'HuddleDate',descending: true}}" selectionMode="MultiToggle"
 		rowSelectionChange="HdrSelectionChng" visibleRowCount="3" paste="onPaste" fixedColumnCount="4" ariaLabelledBy="title">
 		
 		<ui:columns>

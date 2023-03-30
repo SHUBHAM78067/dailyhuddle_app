@@ -1,22 +1,22 @@
 <core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:t="sap.ui.table">
-	<t:Table id="idFloatTable" rows="" selectionMode="Single" fixedRowCount="10"  class="tableFloatUsage">
+	<t:Table id="idFloatTable" rows="{oFloatUsageModel>/}" selectionMode="Single" fixedRowCount="10"  class="tableFloatUsage" visible="false">
 		<t:columns>
 			<t:Column width="12rem" hAlign="Center">
 				<Label text="JC No." wrapping="false" design="Bold"/>
 				<t:template>
-					<Input value="" placeholder="Max. 10 Digits"  liveChange="onJCChange"/>
+					<Input value="{oFloatUsageModel>JcNo}" placeholder="Max. 10 Digits"  liveChange="onJCChange"/>
 				</t:template>
 			</t:Column>
 			<t:Column width="12rem" hAlign="Center">
 				<Label text="Float Part No." wrapping="false" design="Bold"/>
 				<t:template>
-					<Input value="" placeholder="Max. Length 18" maxLength="18"/>
+					<Input value="{oFloatUsageModel>FloatPartNo}" placeholder="Max. Length 18" maxLength="18"/>
 				</t:template>
 			</t:Column>
 			<t:Column width="12rem" hAlign="Center">
 				<Label text="Float Serial No." wrapping="false" design="Bold"/>
 				<t:template>
-					<Input value=""  placeholder="Max. Length 18" maxLength="18"/>
+					<Input value="{oFloatUsageModel>FloatSerialNo}"  placeholder="Max. Length 18" maxLength="18"/>
 				</t:template>
 			</t:Column>
 		</t:columns>

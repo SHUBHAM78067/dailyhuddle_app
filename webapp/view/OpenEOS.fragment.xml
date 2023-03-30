@@ -1,6 +1,6 @@
 <core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:ui="sap.ui.table" xmlns:f="sap.ui.layout.form">
 	<!-- <HBox class="hbclass"> -->
-	<Toolbar class="tbclass">
+	<Toolbar id="oeostoolbarid" class="tbclass">
 		<HBox class="sapUiMediumMarginTopBottom">
 			<Label text="Open EOS Count : " design="Bold" class="kpitxtcls"></Label>
 			<Label width="60px" textAlign="End" textDirection="RTL" class="sapUiTinyMarginBegin kpivalcls" text="" id="OEOS_inpId" design="Bold"></Label>

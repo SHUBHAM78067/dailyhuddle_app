@@ -32,7 +32,9 @@
     .kpitxtcls {
         font-size: medium !important;
     }
-
+    .tableFloatUsage {
+        width: 612px !important;
+    }
     
 
 

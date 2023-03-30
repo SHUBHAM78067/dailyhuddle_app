@@ -33,9 +33,9 @@
                         <!-- Fragment 2 -->
 						<core:Fragment fragmentName="DailyHuddle.dailyhuddleapp.view.OpenJC" class="sapUiSizeCompact" type="XML"/>
 						<!-- Fragment 3 -->
-						<!-- <core:Fragment fragmentName="DailyHuddle.dailyhuddleapp.view.MSLA" class="sapUiSizeCompact" type="XML" /> -->
+						<core:Fragment fragmentName="DailyHuddle.dailyhuddleapp.view.MSLA" class="sapUiSizeCompact" type="XML" />
 						<!-- Fragment 4 -->
-						<!-- <core:Fragment fragmentName="DailyHuddle.dailyhuddleapp.view.Float_Usage" class="sapUiSizeCompact" type="XML"/> -->
+						<core:Fragment fragmentName="DailyHuddle.dailyhuddleapp.view.Float_Usage" class="sapUiSizeCompact" type="XML"/>
         </IconTabFilter>
         <IconTabFilter text="Revisit" icon="sap-icon://shipping-status" key="RVKey" id="RVKey" tooltip="Revisit" >
         <!-- Fragment 5 -->
@@ -43,7 +43,8 @@
         </IconTabFilter>
         <IconTabFilter text="EOS" icon="sap-icon://bus-public-transport" key="EOSKey" id="EOSKey" tooltip="EOS" class="sapUiTinyMargin" >
         <HBox>
-							<ToggleButton text="Open EOS" id="oeostb" class="sapUiTinyMargin sapUiNoMarginTop sapUiTinyMarginBottom" pressed="true" press="onPressOEOS"/>
+							<ToggleButton text="Open EOS" id="oeostb" class="sapUiTinyMargin sapUiNoMarginTop sapUiTinyMarginBottom" pressed="true"
+                             press="onPressOEOS"/>
 							<ToggleButton text="Reach Missed SLA" class="sapUiTinyMargin sapUiNoMarginTop sapUiTinyMarginBottom" id="remslatb" pressed="false"
 								press="onPressRCMSLA"/>
 							<ToggleButton text="Resolution Missed SLA" class="sapUiTinyMargin sapUiNoMarginTop sapUiTinyMarginBottom" id="rsmslatb" pressed="false"

@@ -1,7 +1,6 @@
 <core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form"
 	xmlns:u="sap.ui.unified" xmlns:ui="sap.ui.table">
-	<!-- <HBox class="hbclass"> -->
-	<Toolbar class="tbclass">
+	<Toolbar id="toolbarmslac" class="tbclass" visible="false">
 		<HBox class=" sapUiSmallMarginTopBottom">
 			<Label text="Complaint closure % with SLA (MTD) : " design="Bold" class="kpitxtcls"></Label>
 			<Label width="50px" textAlign="End" class="sapUiTinyMarginBegin kpivalcls" textDirection="RTL" text="" id="CC_inpId" design="Bold"></Label>
@@ -14,13 +13,9 @@
 			<Label text="Total Complaints Closed : " design="Bold" class="kpitxtcls"></Label>
 			<Label width="50px" textAlign="End" class="sapUiTinyMarginBegin kpivalcls" textDirection="RTL" text="" id="MSLAC_inpId3" design="Bold"></Label>
 		</HBox>
-		<!-- <HBox class=" sapUiSmallMarginTopBottom">
-			<Label  text="Complaint closure % with SLA (MTD) : " design="Bold"></Label>
-			<Label width="50px" textAlign="End" class="sapUiTinyMarginBegin" textDirection="RTL" text="" id="MSLAC_inpId1" design="Bold"></Label>
-			</HBox> -->
+	
 	</Toolbar>
-	<!-- </HBox> -->
-	<ui:Table id="uiTab7" rows="{path : '/results' , sorter:{path:'HuddleDate',descending: true}}" selectionMode="MultiToggle"
+	<ui:Table id="uiTab7" visible="false" rows="{path : '/results' , sorter:{path:'HuddleDate',descending: true}}" selectionMode="MultiToggle"
 		rowSelectionChange="HdrSelectionChng" visibleRowCount="3" paste="onPaste" fixedColumnCount="4" ariaLabelledBy="title">
 		<ui:columns>
 			<ui:Column width="2rem">
@@ -71,12 +66,6 @@
 					<Text text="{ZCATEG2_T}" wrapping="false"/>
 				</ui:template>
 			</ui:Column>
-			<!-- <ui:Column width="11rem">
-						<Label text="Complaint Desription" />
-						<ui:template>
-							<Text text="{ZDESC1}" wrapping="false" />
-						</ui:template>
-					</ui:Column> -->
 			<ui:Column width="14rem">
 				<Label text="Complaint Creation Date" design="Bold"/>
 				<ui:template>

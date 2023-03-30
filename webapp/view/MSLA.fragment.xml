@@ -6,7 +6,7 @@
 
 	
 	
-	<Toolbar id="idMSLAToolbar" class="tbclass">
+	<Toolbar id="idMSLAToolbar" class="tbclass" visible="false">
 		<HBox class="sapUiMediumMarginTopBottom">
 			<Label text="Missed SLA Count (Last Day) : " design="Bold" class="kpitxtcls"/>
 			<Label textAlign="End" width="50px" class="sapUiTinyMarginBegin kpivalcls" textDirection="RTL" id="MISLAC_inpId1" text="" design="Bold"/>
@@ -26,7 +26,7 @@
 	</Toolbar>
 	
 	<ui:Table id="uiTab2" selectionMode="MultiToggle" rowSelectionChange="HdrSelectionChng" visibleRowCount="3"
-		paste="onPaste" fixedColumnCount="4" ariaLabelledBy="title">
+		paste="onPaste" fixedColumnCount="4" ariaLabelledBy="title" visible="false">
 		<ui:columns>
 			<ui:Column width="2rem">
 				<Label text=""/>

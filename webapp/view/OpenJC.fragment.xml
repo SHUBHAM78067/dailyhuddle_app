@@ -4,7 +4,7 @@
                          xmlns:f="sap.ui.layout.form" 
                          xmlns:u="sap.ui.unified" 
                          xmlns:ui="sap.ui.table">
-    <Toolbar id="OpenjcToolBar" class="tbclass">
+    <Toolbar id="OpenjcToolBar" class="tbclass" visible="true">
         <HBox id="ojcHBox1" class="sapUiMediumMarginTopBottom">
             <Label id="LabelRepairJCCount" text="Repair JC Count : " design="Bold" class="kpitxtcls" />
             <Label width="50px" textAlign="End" class="sapUiTinyMarginBegin kpivalcls" textDirection="RTL" text="" id="repaire_inpId" design="Bold" />
@@ -18,7 +18,7 @@
             <Label width="50px" textAlign="End" textDirection="RTL" class="sapUiTinyMarginBegin kpivalcls" text="" id="BSVI_inpId2" design="Bold" />
         </HBox>
     </Toolbar>
-    <ui:Table id="uiTab1" selectionMode="MultiToggle" rowSelectionChange="HdrSelectionChng" visibleRowCount="3" paste="onPaste" fixedColumnCount="3" setEnableGrouping="true" ariaLabelledBy="title">
+    <ui:Table id="uiTab1" selectionMode="MultiToggle" rowSelectionChange="HdrSelectionChng" visibleRowCount="3" paste="onPaste" fixedColumnCount="3" setEnableGrouping="true" ariaLabelledBy="title" visible="true">
         <ui:columns>
             <ui:Column width="11rem">
                 <Label text="JC No" design="Bold" />
