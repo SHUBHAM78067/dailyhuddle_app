@@ -88,6 +88,30 @@
         </IconTabFilter>
         </items>
         </IconTabBar>
+        
+						<Table id="tableId1" width="100%" mode="Delete" delete="deleteRow">
+							<headerToolbar>
+								<Toolbar>
+									<ToolbarSpacer></ToolbarSpacer>
+									<Button icon="sap-icon://add" type="Emphasized" press="onAdd"/>
+								</Toolbar>
+							</headerToolbar>
+							<columns>
+								<Column width="50%">
+									<Text text="Delete Items"/>
+								</Column>
+								<Column width="50%">
+									<Text text="First Name"/>
+								</Column>
+								<Column width="50%">
+									<Text text="Last Name"/>
+								</Column>
+								<Column width="50%">
+									<Text text="Salary"/>
+								</Column>
+							</columns>
+						</Table>
+					
         </content>
     </Page>
 </mvc:View>

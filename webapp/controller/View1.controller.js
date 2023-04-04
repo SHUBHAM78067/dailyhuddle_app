@@ -115,6 +115,31 @@ sap.ui.define(
       },
       onProceedPress:function(){
         this.getView().byId("idITB").setVisible(true);
+      },
+      onAdd: function (oEvent) {                               //to add a new row
+        var oItem = new sap.m.ColumnListItem({
+         cells: [new sap.m.Button({
+           icon: "sap-icon://delete",
+           type: "Reject",
+           press: [this.remove, this]
+         }), new sap.m.Input(), new sap.m.Input(), new sap.m.Input({
+           showValueHelp: true
+ 
+         }), ]
+       });
+ 
+       var oTable = this.getView().byId("tableId1");
+       oTable.addItem(oItem);
+      },
+      deleteRow: function (oEvent) {
+        debugger;
+        var oTable = this.getView().byId("tableId1");
+        oTable.removeItem(oEvent.getParameter("listItem"));
+      },
+      remove: function (oEvent) {
+        debugger;
+        var oTable = this.getView().byId("tableId1");
+        oTable.removeItem(oEvent.getSource().getParent());
       }
     });
   }
